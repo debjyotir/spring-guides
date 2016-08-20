@@ -12,7 +12,7 @@ import java.util.Date;
 @Component
 public class ScheduledTasks {
     private static final SimpleDateFormat date = new SimpleDateFormat("HH:mm:ss");
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRate = 50000)
     public void currentTime(){
         System.out.println("Now the time is : "+date.format(new Date()));
     }
